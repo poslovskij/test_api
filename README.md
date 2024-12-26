@@ -124,6 +124,7 @@ http://localhost:8089/api
 *__Реєстрація:__*
 - Метод: `POST`
 - URL: `/register`
+- Заголовок:`Accept: application/json`
 - Тіло запиту:
 ```json
 {
@@ -148,6 +149,7 @@ http://localhost:8089/api
 *__Вхід:__*
 - Метод: `POST`
 - URL: `/login`
+- Заголовок:`Accept: application/json`
 - Тіло запиту:
 ```json
 {
@@ -170,7 +172,9 @@ http://localhost:8089/api
 *__Вихід:__*
 - Метод: `POST`
 - URL: `/logout`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+`Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 - Очікувана відповідь:
 ```json
 {
@@ -182,7 +186,9 @@ http://localhost:8089/api
 *__Створення проекту:__*
 - Метод: `POST`
 - URL: `/projects`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 - Тіло запиту:
 ```json
 {
@@ -203,17 +209,23 @@ http://localhost:8089/api
 *__Список проектів:__*
 - Метод: `GET`
 - URL: `/projects`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 
 *__Отримання проекту за ID:__*
 - Метод: `GET`
 - URL: `/projects/{project_id}`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 
 *__Оновлення проекту:__*
 - Метод: `PUT`
 - URL: `/projects/{project_id}`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 - Тіло запиту:
 ```json
 {
@@ -225,14 +237,18 @@ http://localhost:8089/api
 *__Видалення проекту:__*
 - Метод: `DELETE`
 - URL: `/projects/{project_id}`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 ---
 ### 2.3. Робота з завданнями
 
 *__Створення завдання:__*
 - Метод: `POST`
 - URL: `/projects/{project_id}/tasks`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 - Тіло запиту:
 ```json
 {
@@ -244,12 +260,16 @@ http://localhost:8089/api
 *__Список завдань проекту:__*
 - Метод: `GET`
 - URL: `/projects/{project_id}`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 
 *__Оновлення завдання:__*
 - Метод: `PUT`
 - URL: `/tasks/{task_id}`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 - Тіло запиту:
 ```json
 {
@@ -262,7 +282,9 @@ http://localhost:8089/api
 *__Видалення завдання:__*
 - Метод: `DELETE`
 - URL: `/tasks/{task_id}`
-- Заголовок: `Authorization: Bearer {your-token}`
+- Заголовок:<br>
+  `Accept: application/json`<br>
+  `Authorization: Bearer {your-token}`
 
 ---
 
